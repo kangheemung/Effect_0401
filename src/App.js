@@ -1,6 +1,8 @@
 import React from 'react';
 import Component from './components/Component';
 import Dependencies from './components/Dependencies';
+import DocumentTitleComponent from'./components/DocumentTitleComponent';
+import DataFetchingComponent from './components/DataFetchingComponent';
 
 const MyContext = React.createContext();
 
@@ -9,6 +11,8 @@ function ParentComponent() {
   return (
     <MyContext.Provider value={value}>
       <ChildComponent />
+      <DocumentTitleComponent />
+      <DataFetchingComponent />
     </MyContext.Provider>
   );
 }
